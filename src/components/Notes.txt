@@ -1,0 +1,137 @@
+What are microservices?
+Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection 
+of services that are
+
+Independently deployable
+Loosely coupled
+Organized around business capabilities
+Owned by a small team
+Highly maintainable and testable
+The microservice architecture enables the rapid, frequent and reliable delivery of large, complex applications. It also enables an 
+organization to evolve its technology stack.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+2. What is monolith architecture?
+Monolithic software is designed to be self-contained, wherein the program's components or functions are tightly coupled rather than 
+loosely coupled, like in modular software programs. 
+In a monolithic architecture, each component and its associated components must all be present for code to be executed or compiled and 
+for the software to run.
+
+Monolithic applications are single-tiered, which means multiple components are combined into one large application. Consequently, they 
+tend to have large codebases, which can be cumbersome to manage over time.
+Furthermore, if one program component must be updated, other elements may also require rewriting, and the whole application has to be 
+recompiled and tested. The process can be time-consuming and may limit the agility and speed of software development teams. Despite these 
+issues, the approach is still in use because it does offer some advantages. Also, many early applications were developed as monolithic 
+software, so the approach cannot be completely disregarded when those applications are still in use and require updates.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+3. What is the differnce between monolith and microservice architecture?
+A monolithic application is built as a single unified unit while a microservices architecture is a collection of smaller, independently 
+deployable services. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Whay do we need useEffect hook?
+The useEffect Hook allows you to perform side effects in your components.
+
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+useEffect accepts two arguments. The second argument is optional.
+
+useEffect(<function>, <dependency>)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+5. What is optional chaining?
+The optional chaining (?.) operator accesses an object's property or calls a function. If the object accessed or function called is undefined 
+or null, it returns undefined instead of throwing an error.
+example-
+let sampleObj = {
+    data : {
+        response : {
+            item : {
+                desc : {
+
+                }
+            }
+        }
+    }
+}
+
+
+if(sampleObj.data.response?.item?.desc) {
+    console.log("CYBERKING!!")
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. What is Shimmer UI?
+A shimmer UI resembles the page's actual UI, so users will understand how quickly the web or mobile app will load even before the content has 
+shown up. It gives people an idea of what's about to come and what's happening (it's currently loading) when a page full of content/data takes 
+more than 3 - 5 seconds to load.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. Function statement and function statement?
+ An expression corresponds to a sentence fragment in human language, a JavaScript statement corresponds to a full sentence.
+
+ JavaScript distinguishes expressions and statements. An expression is any valid unit of code that resolves to a value. A statement is a unit 
+ of code that performs an action. Some examples:
+
+// Statements
+let x = 0;
+function add(a, b) { return a + b; }
+if (true) { console.log('Hi'); }
+
+// Expressions
+x;          // Resolves to 0
+3 + x;      // Resolves to 3
+add(1, 2);  // Resolves to 3
+Anywhere JavaScript expects a statement, you can also write an expression. This kind of statement is called an expression statement. Conversely,
+ you cannot write a statement where JavaScript expects an expression.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+8. What is conditional rendering?
+Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator 
+to create elements representing the current state, and let React update the UI to match them.
+
+Consider these two components:
+
+function UserGreeting(props) {
+  return <h1>Welcome back!</h1>;
+}
+
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+We’ll create a Greeting component that displays either of these components depending on whether a user is logged in:
+
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+// Try changing to isLoggedIn={true}:
+root.render(<Greeting isLoggedIn={false} />);
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+9.What is CORS?
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins 
+(domain, scheme, or port) other than its own from which a browser should permit loading resources.
+For security reasons, browsers restrict cross-origin HTTP requests initiated from scripts. For example, XMLHttpRequest and the Fetch 
+API follow the same-origin policy. This means that a web application using those APIs can only request resources from the same 
+origin the application was loaded from unless the response from other origins includes the right CORS headers.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+10. Async & Await?
+The keyword async before a function makes the function return a promise and The await keyword makes the function
+pause the execution and wait for a resolved promise before it continues.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+11. const json = await data.json();
+using this to covert the data into json format.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
